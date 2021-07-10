@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Form</title>
+    <style>
+    body {
+        background-image:linear-gradient(to right,#aa076b, #61045f);
+        opacity:0.9;
+        align-content: center;
+    }
+    .usrform{
+        position:relative;
+        margin-left:31%;
+        margin-right:31%;
+        margin-top:1%;
+        margin-bottom:1%;
+        width: 34%;
+        height: 90%;
+        padding-left:2%;
+        padding-right: 2%;
+        padding-bottom: 2%;
+        padding-top: 1%;
+       background-color:rgb(238, 199, 214);
+       border-width:0px;
+        border-radius:30px;
+        box-shadow: 14px 14px 5px rgb(97, 21, 74);  
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color:#b4257d;
+      
+ }
+   h2{
+      position:relative;
+      text-align: center;
+      font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-weight:bold;
+      text-shadow:  0 0 3px white,2px 2px 4px rgb(97, 21, 74);
+      color:#b4257d;
+    }
+  select  {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  position: relative;
+  background-color:#e44eaa;
+  color:white;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  box-shadow: 4px 4px 4px #ac387f; 
+}
+
+select:hover{
+  background-color: #b4257d; 
+  box-shadow: 6px 6px 4px #ac387f; 
+}
+
+input[type=text],[type=password],[type=email]{
+  width: 100%;
+  color: white;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  position: relative;
+  background-color:#e44eaa;
+  border-color: #e44eaa; 
+  box-shadow: 4px 4px 4px #ac387f; 
+}
+input:hover{
+  background-color: #b4257d; 
+  box-shadow: 6px 6px 4px #ac387f; 
+}
+
+.submit{
+  position: relative;
+  border-radius: 20px;
+  border-color:#ccc;
+  color: white;
+  padding: 3% 14%;
+  text-align: center;
+  display: flex;
+  font-size: 20px;
+  margin: auto;
+  cursor:pointer;
+  background-color :#b4257d;
+  border-style: outset;
+  box-shadow: 3px 6px 3px #999;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-shadow: 0 0 3px white,2px 2px 4px rgb(97, 21, 74);
+
+}
+.submit:hover{
+  background-color: #991466;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.submit:active {
+  background-color: #991466;
+  box-shadow: 3px 5px 2px #666;
+  transform: translateY(4px);
+}
+::placeholder {
+  color:rgb(238, 223, 223);
+  opacity: 1;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ </style>
+</head>
+<body>
+  <div class="usrform">
+      
+      <h2>SIGN UP FORM</h2>
+      <form>
+             <input type="text" id="name" name="name" placeholder="Name"><br>
+              <input type="email" id="mail" name="email" placeholder="Email"><br> 
+              <input type="text" id="Address" name="address" placeholder="Address"><br> 
+              <input type="text" id="phoneno" name="phone no" placeholder="Phone No."><br><br>
+      
+             <input type="radio" id="Hardware" name="Domain" value="Hardware">
+              <label for="Hardware">Hardware</label>
+              <input type="radio" id="Software" name="Domain" value="Software">
+              <label for="Software">Software</label>
+              <input type="radio" id="Design" name="Domain" value="Design">
+              <label for="Design">Design</label><br><br>
+            Choose a skill:
+            <select id="skill" name="skill">
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="Javascript">Javascript</option>
+              </select>
+              <br>
+            <input type="password" id="password" name="password" placeholder="Password">
+         <br>
+        <input type="password" id="cpassword" name="cpassword" placeholder="Confirm Password"><br><br>
+        <button class="submit">Send</button>
+      
+      </form>
+
+  </div>
+</body>
+</html>
